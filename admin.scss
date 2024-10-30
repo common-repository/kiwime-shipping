@@ -1,0 +1,61 @@
+@mixin common-form {
+  input {
+    margin: 8px;
+    margin-left: 0px;
+  }
+  input[type=text], input[type=password] {
+    width: 30em;
+  }
+
+  input[type=submit] {
+    margin: 16px 0;
+  }
+
+  label {
+    margin-right: 16px;
+  }
+  margin-bottom: 32px;
+
+  .advanced-config {
+    display: none;
+  }
+}
+
+#kiwime-signup-section {
+  @include common-form;
+}
+
+#kiwime-login-response {
+  color: red;
+}
+
+#kiwime-login-resend-verify {
+  display: none;
+}
+
+#kiwime-login-section {
+  @include common-form;
+}
+
+#credible_api_key {
+  width: 40em;
+}
+
+#kiwime-api-key-check-response, #kiwime-login-response, #kiwime-signup-response {
+  font-size: 16px;
+}
+
+.kiwime-danger-zone {
+  margin-top: 64px;
+}
+
+.big-button {
+  color: #FFF;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-right: 32px;
+  background-color: #6772E5;
+  cursor: pointer;
+}
